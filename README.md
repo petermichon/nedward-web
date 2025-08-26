@@ -1,1 +1,1 @@
-# nedward-web
+# Nedward Web Client
