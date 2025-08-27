@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "install": "cd website && npm ci && cd .."
+  },
+  "lint": {
+    "rules": {
+      "include": [],
+      "exclude": ["no-unused-vars", "no-empty", "no-explicit-any"]
+    }
+  }
+}
