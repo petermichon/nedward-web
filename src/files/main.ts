@@ -34,7 +34,7 @@ function main() {
 
   global.newButton.addEventListener('click', () => {
     const fileName = prompt('Nom du fichier') || ''
-    const fullPath = fileName
+    const fullPath = `${path}/${fileName}`
     const url = `https://${domain}/api/v1/files/content?path=${fullPath}`
     console.log(url)
 
