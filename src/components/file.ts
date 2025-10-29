@@ -19,7 +19,7 @@ function newFileComponent(file: File, path: string): string {
           <div class="bg-neutral-300 rounded-2xl ml-1 p-5"></div>
         </div>
         <div class="flex flex-col justify-center truncate ml-1 px-2">
-          <div class="text-lg leading-6 font-medium text-black ">
+          <div class="text-lg leading-6 font-medium text-black">
             ${file.isFile ? '📄' : '📁'} ${file.name}
           </div>
         </div>

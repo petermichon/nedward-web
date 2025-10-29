@@ -1,14 +1,22 @@
-type Picture = {
-  title: string
-  description: string
-  color: string
+type File = {
+  name: string
+  // isFile: boolean
 }
 
-function newPictureComponent(picture: Picture): string {
+function newPictureComponent(picture: File): string {
   const html = `
-    <div
-      class="aspect-[3/4] feature-card relative ease-in-out rounded-sm cursor-pointer hover:text-white bg-neutral-300 hover:opacity-80"
-    ></div>
+    <a href="/viewer/?path=/gallery/${picture.name}">
+      <div
+        class="relative aspect-[3/4] overflow-hidden rounded-sm cursor-pointer hover:text-white bg-neutral-300 hover:opacity-80"
+      >
+        <img
+          class="object-cover w-full h-full"
+          src="https://localhost:8443/api/v1/files/content?path=/gallery/${picture.name}"
+          alt="${picture.name}"
+          style="image-rendering: auto"
+        />
+      </div>
+    </a>
   `
   return html
 }

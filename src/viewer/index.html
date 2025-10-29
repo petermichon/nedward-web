@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nedward</title>
 
-    <script type="module" crossorigin src="/gallery/index.ts" defer></script>
+    <script type="module" crossorigin src="/viewer/index.ts" defer></script>
     <link rel="stylesheet" crossorigin href="/index.css" />
   </head>
   <body>
@@ -21,7 +21,7 @@
               <div class="flex">
                 <div class="flex items-center">
                   <a
-                    href="/collections/"
+                    href="/gallery/"
                     title="Retour"
                     class="rounded-full p-3 hover:bg-gray-100 cursor-pointer"
                   >
@@ -60,12 +60,11 @@
 
         <div class="py-4">
           <div class="max-w-7xl mx-auto">
-            <div
-              id="pictures-list"
-              class="grid grid-cols-3 space-y-0 gap-x-0.25 gap-y-0.25 mb-12"
-            ></div>
+            <div id="picture-viewer" class="bg-gray-100"></div>
           </div>
         </div>
+
+        <div class="py-10"></div>
 
         <nav
           class="absolute bottom-0 left-0 right-0 z-50 fixed max-w-sm mx-auto"

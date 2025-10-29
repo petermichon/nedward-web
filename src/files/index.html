@@ -61,7 +61,14 @@
 
         <div class="py-4">
           <div class="max-w-7xl mx-auto px-4">
-            <div id="projects-list" class="grid grid-cols-1 mb-16"></div>
+            <div
+              id="import-button"
+              class="p-4 border-2 border-neutral-400 border-dashed rounded-2xl bg-white hover:border-neutral-400 hover:bg-neutral-100 cursor-pointer text-lg leading-6 font-medium text-black"
+            >
+              <p class="text-center">Importer</p>
+              <input type="file" id="file-input" multiple class="hidden" />
+            </div>
+            <div id="projects-list" class="grid grid-cols-1 mt-4 mb-16"></div>
           </div>
         </div>
 
@@ -93,10 +100,7 @@
                 </svg>
               </button>
             </div>
-            <ul
-              id="navs-list"
-              class="flex justify-around items-center h-16 grid grid-cols-3 border-t border-gray-200 backdrop-blur-lg"
-            ></ul>
+            <div id="nav-bar"></div>
           </div>
         </nav>
       </div>
