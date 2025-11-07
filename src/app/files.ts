@@ -1,7 +1,7 @@
 function pageFiles() {
   const html = `
     <div
-      class="max-w-sm relative min-h-screen mx-auto flex flex-col font-[Fredoka] antialiased bg-white"
+      class="max-w-sm relative min-h-screen mx-auto flex flex-col font-[MavenPro] antialiased bg-white"
     >
       <div class="absolute bottom-0 left-0 right-0 z-50 h-screen w-5"></div>
 

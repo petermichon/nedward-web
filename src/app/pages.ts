@@ -18,7 +18,7 @@ function loadRoutes() {
   Router.routes.set('/example/', () => {
     document.title = 'Newdard - Example'
     const page = `
-      <p class='text-white font-semibold font-[Fredoka] p-3 text-2xl'>Example</p>
+      <p class='text-white font-semibold font-[MavenPro] p-3 text-2xl'>Example</p>
     `
     app.innerHTML = page
     // app.replaceChildren(page)
@@ -257,7 +257,7 @@ function loadRoutes() {
   Router.routes.set('/editor/', () => {
     const html = `
       <div
-        class="max-w-sm relative min-h-screen mx-auto flex flex-col font-[Fredoka] antialiased bg-white"
+        class="max-w-sm relative min-h-screen mx-auto flex flex-col font-[MavenPro] antialiased bg-white"
       >
         <div class="absolute bottom-0 left-0 right-0 z-50 h-screen w-5"></div>
 
@@ -504,7 +504,7 @@ function loadRoutes() {
   Router.routes.set('/gallery/', () => {
     const html = `
       <div
-        class="max-w-sm relative min-h-screen mx-auto flex flex-col font-[Fredoka] antialiased bg-white"
+        class="max-w-sm relative min-h-screen mx-auto flex flex-col font-[MavenPro] antialiased bg-white"
       >
         <div class="absolute bottom-0 left-0 right-0 z-50 h-screen w-5"></div>
 
@@ -647,7 +647,7 @@ function loadRoutes() {
   Router.routes.set('/viewer/', () => {
     const html = `
       <div
-        class="max-w-sm relative min-h-screen mx-auto flex flex-col font-[Fredoka] antialiased bg-white"
+        class="max-w-sm relative min-h-screen mx-auto flex flex-col font-[MavenPro] antialiased bg-white"
       >
         <div class="absolute bottom-0 left-0 right-0 z-50 h-screen w-5"></div>
 
