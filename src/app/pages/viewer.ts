@@ -5,6 +5,14 @@ import { newNavBarComponent } from '../components/nav.ts'
 const app = document.getElementById('app')!
 
 function pageViewer() {
+  const params = {
+    path: new URLSearchParams(globalThis.location.search).get('path') || '',
+  }
+  const path = params.path
+  const fileName = path.split('/').pop()
+
+  document.title = `${fileName} - Nedward`
+
   const html = `
       <div
         class="max-w-sm relative min-h-screen mx-auto flex flex-col font-[MavenPro] antialiased bg-white"
@@ -138,8 +146,7 @@ function pageViewer() {
     global.pictureViewer.appendChild(node)
 
     {
-      const node = document.createElement('div')
-      node.innerHTML = newNavBarComponent()
+      const node = newNavBarComponent()
       global.navBar.appendChild(node)
     }
   }

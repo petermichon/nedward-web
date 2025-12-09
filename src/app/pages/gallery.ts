@@ -1,12 +1,12 @@
 import { Router } from '../router.ts'
 
 import { newNavBarComponent } from '../components/nav.ts'
-import { newPictureComponent } from '../components/picture.ts'
+// import { newPictureComponent } from '../components-archive/picture.ts'
 
 const app = document.getElementById('app')!
 
 function pageGallery() {
-  document.title = 'Newdard - Gallery'
+  document.title = 'Galerie - Nedward'
 
   const html = `
       <div
@@ -128,7 +128,7 @@ function pageGallery() {
       res.json().then((files) => {
         for (const file of files) {
           const node = document.createElement('div')
-          node.innerHTML = newPictureComponent(file)
+          // newPictureComponent(file)
           global.picturesList.appendChild(node)
           {
             node.addEventListener('click', (e) => {
@@ -143,8 +143,7 @@ function pageGallery() {
     })
 
     {
-      const node = document.createElement('div')
-      node.innerHTML = newNavBarComponent()
+      const node = newNavBarComponent()
       global.navBar.appendChild(node)
     }
   }

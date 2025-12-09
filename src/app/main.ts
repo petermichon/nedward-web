@@ -6,10 +6,14 @@ function main() {
 
   loadRoutes()
 
-  console.log(path) // DEV
+  // console.log(path) // DEV
 
   globalThis.addEventListener('popstate', (event) => {
     Router.navigate(globalThis.location.pathname)
+  })
+
+  globalThis.addEventListener('contextmenu', (e) => {
+    e.preventDefault()
   })
 
   Router.navigate(path)

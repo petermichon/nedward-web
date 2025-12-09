@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "install": "cd website && npm ci && cd .."
+    "install": "npm ci"
   },
   "lint": {
     "rules": {
